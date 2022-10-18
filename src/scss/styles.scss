@@ -3,4 +3,40 @@
 .hidden {
   display: none;
 }
+.round {
+  border-radius: 30px;
+}
+.outline-none {
+  outline: none;
+}
+footer {
+  position: absolute;
+  margin-top: 60px;
+  padding-bottom: 40px;
+    
+  &::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    width: 120px;
+    height: 10px;
+    background-color: rgba(255, 0, 0, 0.573);
+  }
+}
 
+.info {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 200px;
+  width: 100%;
+  background-color: rgba(9, 9, 9, 0.9);
+}
+
+.hidden2 {
+  opacity: 0;
+}
+.linked:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

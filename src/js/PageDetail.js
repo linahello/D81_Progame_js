@@ -15,9 +15,9 @@ const PageDetail = (argument) => {
         .then((response) => response.json())
         .then((responseData) => {
           displayGame(responseData);
-        });
+        }
+      );
     };
-
     fetchGame('https://api.rawg.io/api/games', cleanedArgument);
   };
 
