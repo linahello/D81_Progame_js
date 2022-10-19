@@ -13,7 +13,7 @@ footer {
   position: absolute;
   margin-top: 60px;
   padding-bottom: 40px;
-    
+
   &::before {
     content: "";
     position: absolute;
@@ -39,4 +39,33 @@ footer {
 .linked:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.card-title {
+  text-decoration: none;
+  color: white;
+}
+
+.card-title:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.jumbotron {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 550px;
+  max-height: 670px;
+}
+
+.website {
+  position: absolute;
+  bottom: 80px;
+  right: 60px;
+  z-index: 1;
+}
+
+.arrow {
+  margin-left: 40px;
 }

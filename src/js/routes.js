@@ -1,8 +1,10 @@
 import { PageDetail } from './PageDetail';
 import { PageList } from './PageList';
+import { Home } from './Home';
 
 const routes = {
-  '': PageList,
+  '': Home,
+  'pagelist': PageList,
   'pagedetail': PageDetail,
 };
 

@@ -16,12 +16,14 @@ const PageList = (argument = '') => {
       }
     }
     
+    const mainPage = document.getElementById('main-page')
+    mainPage.classList.remove('hidden')
 
   const form = document.getElementsByTagName('input')[0]
   form.addEventListener('keypress', (e) => {
     if(e.key == 'Enter') {
       let searchArgument = form.value;
-      fetchList(`https://api.rawg.io/api/games?dates=2023-01-01,2023-12-31&stores=1,2,3,4,5,6&ordering=-rating&page_size=27&key=${import.meta.env.VITE_RAWG_KEY}`, searchArgument)
+      window.location = `#pagelist/${searchArgument}`
     }
   })
 
@@ -102,7 +104,7 @@ const PageList = (argument = '') => {
               <p>${article.genres.map((genre) => genre.name).join(", ")}</br>
             </div>
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">${article.name}</h5>
+              <a href="#pagedetail/${article.slug}"class="card-title"><h5>${article.name}</h5></a>
               <div class="d-flex flex-row">
                 ${displayPlatforms(article.parent_platforms)}
               </div>

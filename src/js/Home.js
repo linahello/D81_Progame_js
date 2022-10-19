@@ -1,5 +1,5 @@
 const Home = (argument = 'testing home') => {
-  console.log('Home', argument);
+  window.location = '#pagelist'
 };
 
 
