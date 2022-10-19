@@ -23,7 +23,7 @@ const PageList = (argument = '') => {
   form.addEventListener('keypress', (e) => {
     if(e.key == 'Enter') {
       let searchArgument = form.value;
-      window.location = `#pagelist/${searchArgument}`
+      window.location = `#pagelist/&search=${searchArgument}`
     }
   })
 
@@ -116,7 +116,7 @@ const PageList = (argument = '') => {
 
       const resultsContainer = document.querySelector('.page-list .articles');
       resultsContainer.innerHTML = resultsContent.join("\n");
-      resultsContainer.innerHTML += `<button type="button" id="show-more" class="mx-auto my-5 btn btn-danger btn-block">show more</button>`
+      document.querySelector('.mybutton').innerHTML += `<button type="button" id="show-more" class="my-5 btn btn-danger btn-block">show more</button>`
       showMore()
       document.getElementById('show-more').addEventListener('click', showMore)
 
@@ -141,7 +141,7 @@ const PageList = (argument = '') => {
     };
 
     const fetchList = (url, argument) => {
-      const finalURL = argument ? `${url}&search=${argument}` : url;
+      const finalURL = argument ? `${url}${argument}` : url;
       fetch(finalURL)
         .then((response) => response.json())
         .then((responseData) => {
@@ -156,6 +156,7 @@ const PageList = (argument = '') => {
     pageContent.innerHTML = `
       <section class="page-list container">
         <div class="articles row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">Loading...</div>
+        <div class="mybutton row"></div>
       </section>
     `;
     preparePage();
