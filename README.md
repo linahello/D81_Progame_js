@@ -1,6 +1,6 @@
 <div align="center">
 
-# ProGame : les futures sorties des meilleurs jeux videos ! 
+# ProGame : Video games upcoming in 2023 
 
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
 
@@ -10,22 +10,25 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
 
-[![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.svg)](https://forthebadge.com)
-
 [![forthebadge](https://forthebadge.com/images/badges/works-on-my-machine.svg)](https://forthebadge.com)
 
 </div>
 </br>
 
-Un projet Vite, en Single Page Application, incluant SASS, appellant l'API RAWG, en respectant une maquette donnée. Projet réalisé en trois jours lors de la quatrièeme semaine du parcours Dev chez THP.
+Project created on React as a single page application. The goal was to create an app use the API RAWG finding all video games coming in the year 2023.
+You have the possibility click on the title of a game to get its details.
+Restrictions due to the use of the free version of the API limited the details available.
 
-## Mode d'emploi
+## Preview:
 
-↳ visiter :
+### homepage
+<img src="./src/assets/readme/progame_home.png">
 
+### page detail
 
+<img src="./src/assets/readme/progame_detail.png">
 
-👤 **the famous and infamous Vocal_15**
+ author of the project:
 
 - [@Chreees79](https://github.com/Chreees79)
 - [@GuillaumeBrthlt](https://github.com/GuillaumeBrthlt)
@@ -36,14 +39,6 @@ Un projet Vite, en Single Page Application, incluant SASS, appellant l'API RAWG,
 
 ## Show your support
 
-[Un Dev A La Mer](http://www.devalamer.fr/)
-
 Give us a ⭐ Star on GitHub — it helps!
 
 </br>
-
-### 😂 Here is a random joke that'll make you laugh!
-<div align="center">
-
-![Jokes Card](https://readme-jokes.vercel.app/api)
-</div>
